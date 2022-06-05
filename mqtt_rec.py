@@ -16,6 +16,7 @@ mqttc.on_connect = on_connect
 mqttc.on_subscribe = on_subscribe
 
 mqttc.connect("localhost", 1883, 60)
-mqttc.subscribe("test/t1")
+mqttc.subscribe("Latitude")
+mqttc.subscribe("Longitude")
 
 mqttc.loop_forever()

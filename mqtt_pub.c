@@ -45,8 +45,8 @@ int main() {
 
   printf("Client connection to broker successful.\n");
 
-  mosquitto_publish(mosq, NULL, "test/t1", 10, latChars, 0, false);
-  mosquitto_publish(mosq, NULL, "test/t1", 10, lonChars, 0, false);
+  mosquitto_publish(mosq, NULL, "Latitude", 10, latChars, 0, false);
+  mosquitto_publish(mosq, NULL, "Longitude", 10, lonChars, 0, false);
 
   mosquitto_disconnect(mosq);
   mosquitto_destroy(mosq);
